@@ -1,7 +1,7 @@
-$('document').ready(function () {
+$(document).ready(function () {
     let selectedAmenities = {};
 
-    $('INPUT[type="checkbox"]').change(function () {
+    $('input[type="checkbox"]').change(function () {
         let amenityId = $(this).attr('data-id');
         let amenityName = $(this).attr('data-name');
 
@@ -12,6 +12,6 @@ $('document').ready(function () {
         }
 
         let amenitiesList = Object.values(selectedAmenities).join(', ');
-        $('.amenities H4').text(amenitiesList);
+        $('.amenities h4').text(amenitiesList);
     });
 });
